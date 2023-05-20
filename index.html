@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework_9 Form</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main class="main">
+        <div class="container">
+            <form method="GET" class="form">
+                <div>
+                    <label for="name">Повне ім`я</label>
+                    <input type="text" id="name">
+                </div>
+                <div>
+                    <label for="email">email</label>
+                    <input type="email" id="email">
+                </div>
+                <div>
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password">
+                </div>
+                <div>
+                    <label for="password">Пароль еще раз</label>
+                    <input type="password" id="password">
+                </div>
+
+                <div>
+                    <h3>Стать</h3>
+                    <label>
+                        <input type="radio" name="framework" value="Чоловіча">Чоловіча
+                    </label>
+                    <label>
+                        <input type="radio" name="framework" value="Жіноча">Жіноча
+                    </label>
+                </div>
+                <div>
+                    <div>
+                        <label for="age">Вік</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div>
+                        <label for="course">Курс</label>
+                        <select name="course">
+                            <option selected>Виберіть курс</option>
+                            <option value="ukr">Frontend</option>
+                            <option value="swe">Backend</option>
+                            <option value="pol">Data Science</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="course">Повна адреса</label>
+                        <textarea cols="20" rows="10" placeholder="Країна, регіон, місто/селище, вулиця"></textarea>
+                    </div>
+                    <div>
+                        <h3>Я погоджуюсь з обробкою персональних даних</h3>
+                        <label>
+                            <input type="checkbox" name="skills" value="personal.data">
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="block-btn">
+                    <button type="cleanup" class="button">Очистити форму</button>
+                    <button type="signup" class="button">Зарееструватися</button>
+                </div>
+
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
